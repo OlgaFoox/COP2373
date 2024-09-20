@@ -1,0 +1,64 @@
+Name: Olga Foox
+Date Created: 09/18/2024
+
+Program Description:
+
+This program allows users to input their monthly expenses.Then it calculates and displays:
+ 1.Total expenses
+ 2.Highest expense
+ 3.Lowest expense
+
+The program utilizes the Python reduce() function from the functools module for efficient calculation.
+
+Logical Steps:
+
+1.Collect User Expenses: The program prompts the user to enter expense types and amounts.
+ This input is stored in a list of dictionaries, where each dictionary represents an expense with its type and amount.
+ 
+2.Calculate Total Expenses: The program iterates through the list of expense dictionaries using reduce(). 
+ A lambda function within reduce() sums the amounts from each expense dictionary, resulting in the total expenses.
+ 
+3.Identify Highest Expense: Again using reduce(), a lambda function compares the expense amount of each dictionary to the current highest expense. 
+ If the current expense amount is greater, it updates the highest expense variable.Identify Lowest Expense: The program operates similarly to step 3, 
+ except it compares against the current lowest expense, updating it if the current expense amount is lower.
+
+4.Display Results:  The program presents the calculated total expenses, the highest expense (with its type), and the lowest expense (with its type).
+
+
+Variables:
+
+1.expenses: A list of dictionaries, where each dictionary represents an expense and contains the following key-value pairs:
+  type: The type of expense (e.g., "Rent," "Groceries").
+  amount: The numerical value of the expense.
+  
+2.total_expenses: A float representing the sum of all expenses.
+
+3.highest_expense: A dictionary representing the expense with the highest amount, containing "type" and "amount" keys.
+
+4.lowest_expense: A dictionary representing the expense with the lowest amount, containing "type" and "amount" keys.
+
+
+Functions:
+
+1.get_expenses():
+  Description:  Prompts the user to input their expenses and returns a list of dictionaries.
+  Parameters: None.
+  Returns: A list of dictionaries, each representing an expense.
+
+2.calculate_total(expenses):
+ Description: Calculates the total expenses using the reduce() function.
+ Parameters: A list of expense dictionaries.
+ Returns: A float representing the total expenses.
+
+3.find_highest_expense(expenses):
+ Description: Identifies the expense dictionary with the highest amount using reduce(). 
+ Parameters: A list of expense dictionaries.
+ Returns: A dictionary representing the highest expense.
+
+4.find_lowest_expense(expenses):
+ Description: Identifies the expense dictionary with the lowest amount using reduce().
+ Parameters: A list of expense dictionaries.
+ Returns: A dictionary representing the lowest expense.
+
+Link to repository:
+https://github.com/OlgaFoox/COP2373/blob/main/Olga_Foox_3a.py
