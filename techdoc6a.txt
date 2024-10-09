@@ -1,0 +1,55 @@
+Name: Olga Foox
+Date Created: 10/09/2024
+
+Program Description:
+
+ This program validates user-inputted phone numbers, social security numbers, and zip codes against specified formats.
+ It provides immediate feedback on the validity of each input, ensuring users adhere to the correct formats.
+
+Logical Steps:
+
+ 1.Collect User Inputs:
+  The program prompts the user to enter a phone number, social security number (SSN), and zip code.
+ 
+ 2.Validate Phone Number: 
+  It checks if the entered phone number matches the specified formats (e.g., 123-456-7890 or (123) 456-7890) using a regular expression.
+
+ 3.Validate Social Security Number:
+  It verifies that the SSN adheres to the format 123-45-6789 through a regular expression.
+
+ 4.Validate Zip Code: 
+  It assesses whether the zip code matches either the 5-digit format or the 5-4 digit format (e.g., 12345 or 12345-6789).
+ 
+ 5.Display Validation Results: 
+  The program outputs whether each input is valid or invalid based on the validation checks.
+ 
+
+Variables:
+ 1.phone: A string representing the user’s entered phone number.
+ 2.ssn: A string representing the user’s entered social security number.
+ 3.zip_code: A string representing the user’s entered zip code.
+ 
+Functions:
+
+ 1.validate_phone_number(phone):
+ Description: Validates the phone number formats.
+ Parameters: phone (str): The phone number to validate.
+ Returns: bool: True if the phone number is valid, otherwise False.
+
+ 2.validate_ssn(ssn):
+ Description: Validates the social security number format.
+ Parameters: ssn (str): The SSN to validate.
+ Returns: bool: True if the SSN is valid, otherwise False.
+ 
+ 3.validate_zip_code(zip_code):
+ Description: Validates the zip code format.
+ Parameters: zip_code (str): The zip code to validate.
+ Returns: bool: True if the zip code is valid, otherwise False.
+ 
+ 4.main():
+ Description: Handles user input and orchestrates validation processes.
+ Parameters: None.
+ Returns: None. This function prints validation results based on user input.
+
+Link to repository:https:
+ //github.com/OlgaFoox/COP2373
