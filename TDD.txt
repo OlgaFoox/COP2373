@@ -1,0 +1,32 @@
+Name: Olga Foox
+Date Created: October 20, 2024
+
+Program Description:
+The programs serve the purpose of managing student exam grades. 
+The first program (write_grades.py) collects student data, including names and exam scores, and writes this information to a CSV file named grades.csv. 
+The second program (read_grades.py) reads the data from grades.csv and displays it in a well-formatted tabular format. 
+This solution addresses the need for educators to store and retrieve student performance data efficiently.
+
+Logical Steps:
+1.Input Student Count: The first program prompts the instructor for the number of students whose grades will be recorded.
+2.Collect Student Data: For each student, the program collects the first name, last name, and three exam grades through user input.
+3.Write to CSV: The program writes the collected data along with a header row into the grades.csv file using the CSV module.
+4.Read from CSV: The second program opens the grades.csv file, reads the content, and prints the data in a formatted table with appropriate headers.
+
+Variables:
+1.num_students: An integer variable that stores the number of students to be entered by the instructor.
+2.first_name: A string variable that holds the first name of the student.
+3.last_name: A string variable that holds the last name of the student.
+4.exam_1: An integer variable that represents the score for the first exam.
+5.exam_2: An integer variable that represents the score for the second exam.
+6.exam_3: An integer variable that represents the score for the third exam.
+7.file: A file object that is used for both writing to and reading from the CSV file.
+
+Functions:Function Name: main (in write_grades.py)
+Description: The main function prompts user input for student data and writes the information to a CSV file.
+Parameters: None
+Returns: NoneFunction Name: main (in read_grades.py)
+Description: The main function reads the data from grades.csv and displays it in a formatted table.
+Parameters: None
+
+Returns: NoneLink to repository: https://github.com/OlgaFoox/COP2373
