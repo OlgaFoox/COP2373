@@ -1,32 +1,32 @@
 Name: Olga Foox
-Date Created: October 20, 2024
+
+Date Created: October 23, 2024
 
 Program Description:
-The programs serve the purpose of managing student exam grades. 
-The first program (write_grades.py) collects student data, including names and exam scores, and writes this information to a CSV file named grades.csv. 
-The second program (read_grades.py) reads the data from grades.csv and displays it in a well-formatted tabular format. 
-This solution addresses the need for educators to store and retrieve student performance data efficiently.
-
+ This program allows users to input any number of sentences, including those that may start with numbers. 
+ The user can enter each sentence one by one and end the input process by typing 'END'. 
+ Once input is complete, the program utilizes regular expressions to identify and extract valid sentences from the combined input text.
+ It then displays the sentences along with their count, facilitating easy viewing and verification of sentence structure and content.
+ 
 Logical Steps:
-1.Input Student Count: The first program prompts the instructor for the number of students whose grades will be recorded.
-2.Collect Student Data: For each student, the program collects the first name, last name, and three exam grades through user input.
-3.Write to CSV: The program writes the collected data along with a header row into the grades.csv file using the CSV module.
-4.Read from CSV: The second program opens the grades.csv file, reads the content, and prints the data in a formatted table with appropriate headers.
-
+ 1.Collect User Input: 
+ The program prompts the user to enter sentences one by one and continues collecting them until the user types 'END' to terminate input.
+ 2.Combine Sentences: After input collection, the program combines all entered sentences into a single string for processing.
+ 3.Extract Sentences: The program uses a regular expression to identify and extract valid sentences from the combined string, handling newlines and capital letters appropriately.
+ 4.Display Results: Finally, the program prints each extracted sentence along with its corresponding index number and displays the total number of sentences identified.
+ 
 Variables:
-1.num_students: An integer variable that stores the number of students to be entered by the instructor.
-2.first_name: A string variable that holds the first name of the student.
-3.last_name: A string variable that holds the last name of the student.
-4.exam_1: An integer variable that represents the score for the first exam.
-5.exam_2: An integer variable that represents the score for the second exam.
-6.exam_3: An integer variable that represents the score for the third exam.
-7.file: A file object that is used for both writing to and reading from the CSV file.
-
-Functions:Function Name: main (in write_grades.py)
-Description: The main function prompts user input for student data and writes the information to a CSV file.
+ 1.user_input: A list that stores each sentence entered by the user before the termination command is issued.
+ 2.sentence: A string variable that holds the current sentence entered by the user during interactive input.
+ 3.full_text: A string that combines all sentences in user_input into one long string for regex processing.
+ 4.sentences: A list that contains all valid sentences extracted from full_text using the specified regular expression pattern.
+ 
+Functions:
+ 1.Function Name: main
+Description: The primary function where the execution of the program begins.
+It handles user input, processes the data to find sentences, and displays both the sentences and their totals.
 Parameters: None
-Returns: NoneFunction Name: main (in read_grades.py)
-Description: The main function reads the data from grades.csv and displays it in a formatted table.
-Parameters: None
+Returns: None
 
-Returns: NoneLink to repository: https://github.com/OlgaFoox/COP2373
+Link to repository:
+ https://github.com/OlgaFoox/COP2373
