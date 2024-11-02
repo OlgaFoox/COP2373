@@ -1,0 +1,96 @@
+Name: Olga Foox
+Date Created: 10.31.2024
+
+Program Description:
+ This program implements a BankAcct class that models a bank account allowing users to deposit, 
+ withdraw, and maintain a record of their balance and interest accrued.
+ It provides functionality to adjust the interest rate, compute earned interest over a specified number of days,
+ and return a string representation of account details, thus catering to basic banking operations.
+ 
+1.Function Name: __init__
+ Description: Initializes a new bank account with a name, account number, initial amount, and interest rate.
+ 
+ Parameters:
+  name: str - The name of the account holder.
+  account_number: str - The unique account number.
+  amount: float - Initial deposit amount.
+  interest_rate: float - Annual interest rate in decimal form.
+
+ Variables:
+  self.name: str - Stores the name of the account holder.
+  self.account_number: str - Stores the account number.
+  self.amount: float - Stores the current amount in the account.
+  self.interest_rate: float - Stores the current interest rate.
+ 
+ Logical Steps: 
+  Assign input parameters to instance variables.
+  Returns: None
+  
+2.Function Name: adjust_interest_rate
+ Description: Updates the current interest rate of the account.
+ 
+ Parameters:
+  new_rate: float - The new interest rate to set for the account.
+ Variables:
+  self.interest_rate: float - Updated interest rate stored in the instance variable.
+ 
+ Logical Steps:
+  Assign the new rate to the instance variable.
+  Returns: None.
+
+3.Function Name: deposit
+ Description: Deposits an amount into the bank account.
+ Parameters:
+  amount: float - The amount to deposit.
+ Variables: 
+  self.amount: float - Updated balance after depositing.
+ Logical Steps:
+  Increase the current amount by the deposit amount.
+  Returns: Updated account balance.
+
+4.Function Name: withdraw
+ Description: Withdraws an amount from the bank account if sufficient funds are available.
+ Parameters:amount: 
+  float - The amount to withdraw.
+ Variables:
+  self.amount: float - Updated balance after withdrawal .
+ Logical Steps:
+  Check if the amount is greater than the current balance.If yes, print an insufficient funds message; otherwise, deduct the amount.
+  Returns: Updated account balance. 
+
+5.Function Name: balance
+ Description: Returns the current balance of the account.
+ Parameters: None
+ Variables: None
+ Logical Steps:
+  Return the current amount stored in the instance variable.
+  Returns: Current account balance.
+  
+6.Function Name: calculate_interest
+ Description: Calculates interest based on the number of days.
+ Parameters:
+   days: int - The number of days to calculate interest for.
+ Variables:
+   daily_interest_rate: float - Daily interest rate calculated from the annual rate.
+   interest: float - Calculated interest amount.
+ Logical Steps:
+  Compute the daily interest rate based on the annual rate.
+  Calculate interest for the given number of days using the formula.
+  Returns: Calculated interest amount.
+
+7.Function Name: __str__
+ Description: Returns a string representation of the account details.
+ Parameters: None
+ Variables: None
+ Logical Steps:
+  Format and return account details as a string.
+  Returns: Formatted string of account details.
+  
+Logical Steps:
+  __init__ is called to create a new bank account.
+  __str__ displays initial account details.
+  deposit is called to add funds to the account.
+  withdraw is called to remove funds from the account and check insufficient funds.
+  adjust_interest_rate changes the interest rate of the account.
+  calculate_interest computes interest for a specified number of days.
+  The __str__ method is called to display the final account status.
