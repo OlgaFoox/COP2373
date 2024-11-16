@@ -1,0 +1,45 @@
+Name: Olga Foox
+Date Created: 11.16.2024
+
+Program Description:
+ The program is a simple poker game that allows users to draw a hand of five cards from a standard deck of 52 cards. 
+ The program allows the user to select which cards to replace during a draw phase, 
+ providing an interactive experience that simulates the process of drawing poker cards. 
+ It effectively demonstrates concepts of object-oriented programming with a focus on class and method usage.
+
+Logical Steps:
+ 1.Initialize the Deck:
+  Create an instance of the Deck class,which contains 52 shuffled playing cards.
+ 2.Deal Initial Hand: 
+  Use the deck's deal method to draw five cards and store them in a hand list.
+ 3.Display Initial Hand: 
+  Print the cards in the user's hand in a human-readable format.
+ 4.Prompt for Replacement:
+  Ask the user to specify which cards they would like to replace, allowing them to input indices or opt to keep their hand.
+ 5.Replace Cards: 
+  For each specified index from the user, deal a new card to that position in the hand.
+ 6.Display Final Hand: 
+  Print the updated hand after the replacements.
+
+Variables:
+ 1.my_deck: An instance of the Deck class, represents the deck of cards used in the game.
+ 2.hand: A list that holds the current hand of five cards dealt to the player.
+ 3.replace_indices: A string input from the user indicating which cards (by index) they want to replace.
+ 4.indices: A list of integers that represent the indices of the cards the user chose to replace.
+
+Functions:
+ 1.Function Name: card_to_rank_suit(card)
+  Description: Converts a card number into its corresponding rank and suit.
+  Parameters: card: An integer representing the card number.
+  Returns: A tuple (rank, suit) containing the rank and suit of the card.
+ 2.Function Name: print_hand(hand)
+  Description: Prints each card in the user's hand in a readable format.
+  Parameters: hand: A list of card numbers representing the player's hand.
+  Returns: None. The function outputs the hand directly to the console.
+ 3.Function Name: main()
+  Description: The main function that orchestrates the game flow, including dealing cards, handling user input for replacements, and displaying hands.
+  Parameters: None.
+  Returns: None. The function executes the game process and outputs results to the console.
+
+Link to repository:
+ https://github.com/OlgaFoox/COP2373
