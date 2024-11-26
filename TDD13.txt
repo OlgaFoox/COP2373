@@ -1,0 +1,56 @@
+Name: Olga Foox
+Date Created: 11/26/2024
+Program Description:
+  This program simulates and visualizes population growth for selected cities in Florida.
+  It creates a SQLite database to store population data for each city and the year 2023.
+  Users can choose a city to view projected population growth over a specified number of years using a defined growth rate. 
+  The data is visually represented in a graph using Matplotlib.
+
+Logical Steps:
+ 1.Establish a connection to a SQLite database and create a table for storing population data if it doesn't already exist.
+ 2.Insert initial population data for various cities in Florida for the year 2023.
+ 3.Allow the user to select a city and simulate its population growth over a specified number of years, applying a defined growth rate.
+ 4.Store the simulated population data in the database and generate a visual graph representing the growth over time.
+ 5.Provide an interactive user interface to select cities and view their population growth.
+
+Variables:
+  1.DB_NAME:The name of the SQLite database file (e.g., 'population_OF.db').
+  2.cities: A list of tuples containing city names and their corresponding populations for the year 2023.
+  3.year: A constant integer representing the base year for the population data (2023).
+  4.growth_rate: A float representing the annual rate at which the population is expected to grow (default is 0.02, or 2%).
+  5.years: An integer indicating the number of years to simulate population growth (default is 20 years).
+  6.current_population: An integer that holds the current population for a selected city during the simulation.
+  7.population_data: A list that stores the projected population values for each year of the simulation.
+  8.years_list: A list that stores the corresponding years for the simulated population data.
+
+Functions:
+ 1.Function Name: simulate_population_growth
+  Description: 
+   Simulates the population growth for a specified city over a defined number of years.
+ 
+ Parameters:
+  city: The name of the city for which to simulate population growth.
+  growth_rate: The annual growth rate applied to the city's population (default is 0.02).
+  years: The number of years to simulate growth (default is 20).
+ 
+ Returns:
+  A tuple containing two lists: years_list and population_data, representing the years and corresponding population values.
+
+ 2.Function Name: plot_population_growth
+  Description: Visualizes the population growth over the specified years using Matplotlib.
+  Parameters:
+    years: A list of years corresponding to the population data.
+    population: A list of projected population values for each year.
+    city: The name of the city being analyzed, used for plot titles.
+ Returns:
+   None (the function displays a plot).
+
+ 3.Function Name: main
+  Description: 
+   Manages the user interface and interaction for selecting cities and viewing their growth projections.
+  Parameters: None.
+ Returns:
+  None (the function runs the primary loop for user interaction).
+
+Link to repository:
+ https://github.com/OlgaFoox/COP2373
